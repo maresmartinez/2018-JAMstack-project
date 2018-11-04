@@ -1,0 +1,14 @@
+.emotionsList {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttonWrapper {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.modalContentContainer {
+    display: flex;
+    flex-direction: column;
+}

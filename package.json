@@ -1,0 +1,57 @@
+{
+  "name": "gatsby-starter-default",
+  "description": "Gatsby default starter",
+  "version": "1.0.0",
+  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "dependencies": {
+    "@material-ui/core": "^3.3.2",
+    "faunadb": "^2.5.2",
+    "gatsby": "^2.0.19",
+    "gatsby-image": "^2.0.15",
+    "gatsby-plugin-google-fonts": "^0.0.4",
+    "gatsby-plugin-manifest": "^2.0.5",
+    "gatsby-plugin-offline": "^2.0.5",
+    "gatsby-plugin-react-helmet": "^3.0.0",
+    "gatsby-plugin-sharp": "^2.0.7",
+    "gatsby-source-filesystem": "^2.0.4",
+    "gatsby-transformer-sharp": "^2.1.4",
+    "netlify-identity-widget": "^1.4.14",
+    "react": "^16.5.1",
+    "react-dom": "^16.5.1",
+    "react-helmet": "^5.2.0",
+    "react-rangeslider": "^2.2.0",
+    "react-redux": "^5.1.0",
+    "redux": "^4.0.1",
+    "redux-persist": "^5.10.0",
+    "redux-thunk": "^2.3.0"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "start": "npm run develop",
+    "format": "prettier --write \"src/**/*.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bootstrap": "node ./scripts/bootstrap-fauna-database.js"
+  },
+  "devDependencies": {
+    "netlify-lambda": "^1.0.2",
+    "npm-run-all": "^4.1.3",
+    "prettier": "^1.14.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  },
+  "proxy": {
+    "/.netlify/functions": {
+      "target": "http://localhost:9000",
+      "pathRewrite": {
+        "^/\\.netlify/functions": ""
+      }
+    }
+  }
+}
